@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <input type="text" id="Nhapso">
+    <select name="" id="se1">
+        <option value="a">Vnd</option>
+        <option value="b">Usd</option>
+    </select>
+    <select name="" id="se2">
+        <option value="a">Vnd</option>
+        <option value="b">Usd</option>
+    </select>
+    <button onclick="Anvao()">convert</button>
+</form>
+<script>
+    function Anvao() {
+        let giatrivao = document.getElementById('Nhapso').value;
+        let se1 = document.getElementById('se1').value;
+        let se2 = document.getElementById('se2').value;
+
+        if (se1 == se2) {
+            alert(giatrivao);
+        }
+        if (se1 == "a" && se2 == "b") {
+            alert(giatrivao / 23000);
+        }
+        if (se1 == "b" && se2 == "a") {
+            alert(giatrivao * 23000);
+        }
+    }
+</script>
+</body>
+</html>

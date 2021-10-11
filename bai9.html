@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<input type="number" id="a">
+<input type="number" id="b">
+<br><br>
+<button onclick="cong()">Addittion(+)</button>
+<button onclick="tru()">Subtraction(-)</button>
+<button onclick="nhan()">Multiplication(X)</button>
+<button onclick="chia()">Division(/)</button>
+
+<script>
+    function cong() {
+        var giatria = +document.getElementById("a").value;
+        var giatrib = +document.getElementById("b").value;
+        var Area = giatria + giatrib;
+        alert("Area :" + Area);
+    }
+
+    function tru() {
+        var giatria = +document.getElementById("a").value;
+        var giatrib = +document.getElementById("b").value;
+        var Area = giatria - giatrib;
+        alert("Area :" + Area);
+    }
+
+    function nhan() {
+        var giatria = +document.getElementById("a").value;
+        var giatrib = +document.getElementById("b").value;
+        var Area = giatria * giatrib;
+        alert("Area :" + Area);
+    }
+
+    function chia() {
+        var giatria = +document.getElementById("a").value;
+        var giatrib = +document.getElementById("b").value;
+        var Area = giatria / giatrib;
+        alert("Area :" + Area);
+    }
+</script>
+</body>
+</html>
